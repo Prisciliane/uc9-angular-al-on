@@ -1,0 +1,57 @@
+footer {
+    background: linear-gradient(269.77deg, #000207 0.05%, #2D8497 70.17%, #9badec 100%);
+    display: grid;
+    grid-template-areas: 
+    'enderecos1 enderecos3'
+    'enderecos2 midias-sociais';
+    padding: 10px;
+}
+#logotipo-rodape {
+    display: none;
+    grid-area: imagem-logo;
+}
+.enderecos-rodape1 {
+    grid-area: enderecos1;
+    font-size: small;
+}
+.enderecos-rodape2 {
+    grid-area: enderecos2;
+    font-size: small;
+}
+.enderecos-rodape3 {
+    grid-area: enderecos3;
+    font-size: small;
+}
+
+#midias-sociais {
+    grid-area: midias-sociais;
+}
+#midias-sociais img {
+    height: 40px;
+}
+#menu-rodape {
+    display: none;
+    grid-area: menu-rodape;
+}
+#menu-rodape ul {
+    list-style: none;
+}
+#menu-rodape ul li {
+    margin-bottom: 10px;
+}
+@media screen and (min-width:720px){
+    footer {
+        grid-template-areas: 
+        'imagem-logo enderecos1 midias-sociais'
+        'imagem-logo enderecos2 menu-rodape'
+        'imagem-logo enderecos3 menu-rodape';
+        padding: 20px;
+    }
+    #logotipo-rodape {
+        display: block;
+    }
+    #menu-rodape {
+        display: block;
+        
+    }
+}

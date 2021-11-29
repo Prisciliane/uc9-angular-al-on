@@ -1,0 +1,60 @@
+.banner-home{
+    background-color: rgb(209, 201, 201);
+    width: 90%;
+    height: 200px;
+    padding: 60px;
+    margin: 0 auto;
+    display: table;
+    box-shadow: -1px -2px 5px 13px rgba(230,255,225,0.75);
+    -webkit-box-shadow: -1px -2px 5px 13px rgba(230,225,225,0.75);
+    -moz-box-shadow: -1px -2px 5px 13px rgba(230,225,225,0.75);
+}
+.banner-home img{
+    width: 60%;
+    height: 480px;
+}
+.banner-home .texto-apre{
+    margin-top: 50px;
+    width: 50%;
+    font-size: 22px;
+    float: right;
+
+}
+
+@media screen and (min-width:720px) {
+    
+    #banner{
+        padding: 20px;
+        
+        margin-top: 20px;
+    }
+    #banner img{
+        width: 450px;
+    }
+   
+}
+
+.grupo-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+/* class css*/
+.texto-centralizado {
+    text-align: center;
+}
+.senai-card {
+    width: 238px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.senai-card img {
+    width: 100%;
+    border-radius: 4px 4px 0px 0px;
+}
+.senai-card div {
+    padding: 10px;
+}
